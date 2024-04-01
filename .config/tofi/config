@@ -1,0 +1,24 @@
+# general
+prompt-text = "->"
+hide-cursor = false
+history     = true
+
+# font
+font = JetBrainsMonoNerdFont
+font-size=14
+# style
+border-width = 0
+outline-width = 0
+height = 450
+width = 450
+padding-left = 30
+padding-top = 20
+prompt-padding = 5
+result-spacing = 5
+# colors
+
+placeholder-color = #FFFFFF
+background-color = #000000
+selection-color = #EE5396
+text-color = #dde1e6
+prompt-color = #EE5396

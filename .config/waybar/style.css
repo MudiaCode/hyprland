@@ -1,6 +1,7 @@
 * {
     font-family: JetBrainsMono Nerd Font;
     font-size: 14px;
+  min-height: 0;
 }
 
 window#waybar {
@@ -112,6 +113,10 @@ button:hover {
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
     color: #ee5396;
+}
+
+#bluetooth {
+  color: #ee5396;
 }
 
 #power-profiles-daemon {

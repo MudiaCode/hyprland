@@ -1,12 +1,12 @@
 {
     "spacing": 4,
-    "height": 25,
     "modules-left": [
         "hyprland/workspaces",
     ],
     "modules-center": [
     ],
     "modules-right": [
+       "bluetooth",
         "network",
         "battery",
         "clock",
@@ -26,8 +26,7 @@
   "sort-by-number": true
 },
     "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format": "{:%H:%M} 󱑁"
     },
     "battery": {
         "states": {
@@ -39,16 +38,18 @@
         "format-full": "{capacity}% {icon}",
         "format-charging": "{capacity}% 󱐋",
         "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
     "network": {
         "format-wifi": "{essid} ",
         "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
     },
+    "bluetooth": {
+	"format": " {status}",
+	"format-connected": " {device_alias}",
+	"format-connected-battery": " {device_alias}", 
 }
+}
+
